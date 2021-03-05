@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Form</title>
+</head>
+<div class="container">
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Data</legend>
+            <label>
+                <span>Name:</span>
+                <input type="text" name="name" placeholder="Enter name">
+            </label>
+            <label>
+                <span>Surname:</span>
+                <input type="text" name="surname" placeholder="Enter surname">
+            </label>
+            <div class="sex-block">
+                <span class="sex">Sex:</span>
+                <label class="sex-option">
+                    <input type="radio" name="sex" value="male">
+                    <span>Male</span>
+                </label>
+                <label class="sex-option">
+                    <input type="radio" name="sex" value="female" checked>
+                    <span>Female</span>
+                </label>
+            </div>
+            <div class="birth-block">
+                <span class="birth">Date of Birth:</span>
+                <select name="month">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <select name="month">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                </select>
+                <select name="year">
+                    <option>1980</option>
+                    <option>1981</option>
+                    <option>1982</option>
+                </select>
+            </div>
+            <div class="photo-block">
+                <span class="photo">Photo:</span>
+                <input type="file" name="photo">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Professional Skills</legend>
+            <div class="requires">
+                <div class="skils__block">
+                    <span>Skills and technologies:</span>
+                    <select name="skills" multiple size="4">
+                        <option>HTML</option>
+                        <option selected>CSS</option>
+                        <option>JavaScript</option>
+                        <option>Node.js</option>
+                    </select>
+                </div>
+                <div class="experience__block">
+                    <span>Experience (years):</span>
+                    <input type="range" name="range">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact & Registration</legend>
+            <label>
+                <span>Phone number:</span>
+                <input type="text" name="phone" placeholder="000 111 22 33">
+            </label>
+            <label>
+                <span>E-mail:</span>
+                <input type="email" name="email" placeholder="name@domain.com">
+            </label>
+            <label>
+                <span>Login:</span>
+                <input type="text" name="login" placeholder="Enter login">
+            </label>
+            <label>
+                <span>Password:</span>
+                <input type="password" name="name" placeholder="Enter pass">
+            </label>
+        </fieldset>
+        <input type="submit" class="form__submit" value="Submit">
+    </form>
+</div>
+
+<body>
+
+</body>
+
+</html>
